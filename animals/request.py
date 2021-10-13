@@ -1,3 +1,6 @@
+import animals
+
+
 ANIMALS = [
     {
         "id": 1,
@@ -57,3 +60,12 @@ def create_animal(animal):
     # Return the dictionary with `id` property added
     return animal
 
+def delete_animal(id):
+    animal_index = -1
+
+    for index, animal in enumerate(ANIMALS):
+        if animal['id'] == id:                  # dictionaries use bracket notation, not dot notation
+            animal_index = index
+
+    if animal_index >= 0:
+        ANIMALS.pop(animal_index)

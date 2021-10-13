@@ -45,4 +45,13 @@ def create_location(location):
 
     # Return the dictionary with `id` property added
     return location
-    
+
+def delete_location(id):
+    location_index = -1
+
+    for index, location in enumerate(LOCATIONS):
+        if location['id'] == id:                  # dictionaries use bracket notation, not dot notation
+            location_index = index
+
+    if location_index >= 0:
+        LOCATIONS.pop(location_index)

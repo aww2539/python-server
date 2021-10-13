@@ -62,3 +62,13 @@ def create_customer(customer):
 
     # Return the dictionary with `id` property added
     return customer
+
+def delete_customer(id):
+    customer_index = -1
+
+    for index, customer in enumerate(CUSTOMERS):
+        if customer['id'] == id:                  # dictionaries use bracket notation, not dot notation
+            customer_index = index
+
+    if customer_index >= 0:
+        CUSTOMERS.pop(customer_index)
