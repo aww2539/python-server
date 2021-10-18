@@ -3,25 +3,25 @@ EMPLOYEES = [
         "id": 1,
         "name": "Luke Skywalker",
         "address": "333 Degoba System",
-        "locationId": 1
+        "location_id": 1
     },
     {
         "id": 2,
         "name": "Bart Simpson",
         "address": "90 Cartoon Way",
-        "locationId": 1
+        "location_id": 1
     },
     {
         "id": 3,
         "name": "Harry Potter",
         "address": "588 Hogwarts Stuff",
-        "locationId": 2
+        "location_id": 2
     },
     {
         "id": 4,
         "name": "Frodo Baggins",
         "address": "102 Somewhere in the shire blvd",
-        "locationId": 2
+        "location_id": 2
     }
 ]
 
