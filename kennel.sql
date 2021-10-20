@@ -38,6 +38,7 @@ INSERT INTO `Animal` VALUES (null, "Doodles", "Kennel", "Poodle", 3, 1);
 INSERT INTO `Animal` VALUES (null, "Daps", "Kennel", "Boxer", 2, 2);
 
 
+
 CREATE TABLE `Employee` (
 	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	`name`	TEXT NOT NULL,
@@ -56,3 +57,5 @@ INSERT INTO `Employee` VALUES (null, "Leah Hoefling", "200 Success Way", 2);
 
 
 
+
+SELECT * FROM Animal ORDER BY id DESC;
